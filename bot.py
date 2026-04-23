@@ -6,7 +6,8 @@ from aiogram.filters import CommandStart, Command
 from aiogram.fsm.storage.memory import MemoryStorage
 
 # ==================== НАСТРОЙКИ ====================
-BOT_TOKEN = "8682908255:AAGcEKUCNd0sfzQgldmI5fXYtuGeeFpZOF4"  # @BotFather дан токен
+import os
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 # Каналы на которые нужно подписаться (username без @)
 CHANNELS = [
